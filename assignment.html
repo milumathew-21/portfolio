@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Milu Achu Mathew</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-page="projects">Projects</a></li>
+                    <li><a href="#" class="nav-link" data-page="achievements">Achievements</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME PAGE -->
+        <div class="page active" id="home">
+            <section class="home-hero">
+                <div class="hero-container">
+                    <!-- Hero Text -->
+                    <div class="hero-text">
+                        <h1>Milu Achu Mathew</h1>
+                        <p>Hello! I'm Milu Mathew, a student and aspiring full-stack developer passionate about exploring new technologies and crafting meaningful digital experiences. I enjoy turning ideas into elegant solutions, blending creativity with clean, efficient code.</p>
+                        <button class="hero-button" onclick="navigateTo('projects')">View My Projects</button>
+                    </div>
+
+                    <!-- Hero Video -->
+                    <div class="hero-image">
+                        <video src="developer.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div class="page" id="about">
+            <div class="about-container">
+                <section class="profile-section">
+                    <div class="profile-image">
+                        <img src="me.jpg" alt="Milu Mathew">
+                    </div>
+
+                    <div class="profile-text">
+                        <h2>The Story Behind You</h2>
+                        <p>Hi! I'm Milu Achu Mathew, a Full-Stack Developer and Digital Explorer from Mangaluru, Karnataka.</p>
+                        <p>As a student passionate about technology, I love learning, experimenting, and building projects that turn ideas into reality.</p>
+                        <p>Driven by curiosity and creativity, I enjoy crafting solutions where clean design meets strong functionality. When I'm not coding, I'm usually exploring new tools, contributing to open-source, or sharing what I learn with the developer community.</p>
+                    </div>
+                </section>
+
+                <div class="skills-divider"></div>
+
+                <section class="skills-section">
+                    <h3>Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tile">
+                            <h4>Frontend Development</h4>
+                            <p>HTML, CSS, JavaScript, React, Vue.js, Responsive Design</p>
+                        </div>
+                        <div class="skill-tile">
+                            <h4>Backend Development</h4>
+                            <p>Node.js, Python, Express, MongoDB, PostgreSQL, RESTful APIs</p>
+                        </div>
+                        <div class="skill-tile">
+                            <h4>UI/UX Design</h4>
+                            <p>Figma, Adobe XD, Wireframing, Prototyping, User Research</p>
+                        </div>
+                        <div class="skill-tile">
+                            <h4>Version Control</h4>
+                            <p>Git, GitHub, GitLab, Collaborative Development</p>
+                        </div>
+                        <div class="skill-tile">
+                            <h4>Database Management</h4>
+                            <p>SQL, NoSQL, Data Modeling, Query Optimization</p>
+                        </div>
+                        <div class="skill-tile">
+                            <h4>DevOps & Deployment</h4>
+                            <p>Docker, AWS, CI/CD Pipelines, Linux, Cloud Services</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- PROJECTS PAGE -->
+        <div class="page" id="projects">
+            <div class="projects-container">
+                <h2>The Lab of Creations</h2>
+                <p class="section-subtitle">
+                    Welcome to my creative laboratory — a space where imagination meets technology. 
+                    Each project below reflects my journey as a learner, developer, and problem-solver, 
+                    combining code, design, and innovation to bring ideas to life.
+                </p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <img src="chat.png" alt="MindEase Chatbot">
+                        </div>
+                        <h3>MindEase Chatbot</h3>
+                        <p>An AI-powered mental wellness chatbot designed to provide empathetic conversations and guided support. Built using Flask, Python, and Gemini API integration.</p>
+                        <button class="project-link" onclick="alert('Visit: github.com/miluachu/mindease-chatbot')">View Project</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <img src="aistudy.png" alt="AI Study Mentor">
+                        </div>
+                        <h3>AI Study Mentor</h3>
+                        <p>A smart study companion that helps students organize notes, generate quizzes, and track progress. Developed with React, Node.js, and OpenAI APIs.</p>
+                        <button class="project-link" onclick="alert('Visit: github.com/miluachu/aistudymentor')">View Project</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <img src="track.png" alt="CitySense Dashboard">
+                        </div>
+                        <h3>CitySense Dashboard</h3>
+                        <p>A real-time smart city data dashboard visualizing traffic, pollution, and weather analytics.</p>
+                        <button class="project-link" onclick="alert('Visit: github.com/miluachu/citysense-dashboard')">View Project</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <img src="rythm.png" alt="RhythmWave">
+                        </div>
+                        <h3>RhythmWave</h3>
+                        <p>A music streaming web app that allows users to create playlists, explore genres, and discover trending artists.</p>
+                        <button class="project-link" onclick="alert('Visit: github.com/miluachu/rhythmwave')">View Project</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <img src="codequest.png" alt="CodeQuest">
+                        </div>
+                        <h3>CodeQuest</h3>
+                        <p>An interactive coding challenge platform that helps users sharpen their programming skills.</p>
+                        <button class="project-link" onclick="alert('Visit: github.com/miluachu/codequest')">View Project</button>
+                    </div>
+                </div> <!-- projects-grid -->
+            </div> <!-- projects-container -->
+        </div> <!-- projects page -->
+
+        <!-- ACHIEVEMENTS PAGE -->
+        <div class="page" id="achievements">
+            <div class="achievements-container">
+                <h2>Milestones Gallery</h2>
+
+                <div class="achievement-card">
+                    <h3>Full-Stack Developer Certification</h3>
+                    <div class="date">June 2024</div>
+                    <p>Completed a comprehensive certification in full-stack web development, gaining hands-on experience in React, Node.js, and MongoDB. Built multiple capstone projects demonstrating end-to-end development skills and practical implementation.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Open Source Contributor</h3>
+                    <div class="date">Ongoing</div>
+                    <p>Contributing to open-source projects focused on web accessibility, UI components, and backend optimization. Collaborating with developers worldwide to enhance community-driven software solutions and documentation quality.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Campus Tech Lead – Developer Student Community</h3>
+                    <div class="date">2024 - Present</div>
+                    <p>Leading a student developer community by organizing coding sessions, collaborative projects, and knowledge-sharing meetups. Mentoring peers and promoting hands-on learning through real-world development challenges.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Award: Best Innovative Project</h3>
+                    <div class="date">March 2025</div>
+                    <p>Recognized for developing "MindEase," an AI-powered mental wellness chatbot, at a national-level project showcase. The project was praised for its creativity, usability, and technical execution.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>AWS Solutions Architect Associate</h3>
+                    <div class="date">September 2024</div>
+                    <p>Earned AWS Solutions Architect Associate certification, demonstrating proficiency in designing scalable, secure, and efficient cloud-based architectures using AWS services.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div class="page" id="contact">
+            <div class="contact-container">
+                <h2>Connect with Me</h2>
+
+                <div class="contact-form-wrapper">
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="social-section">
+                    <h3>Get in Touch</h3>
+                    <div class="social-grid">
+                        <a href="mailto:milumachumathew@gmail.com" class="social-card">
+                            <h4>📧 Email</h4>
+                            <p>milumachumathew@gmail.com</p>
+                            <p style="font-size: 0.8rem; margin-top: 0.5rem;">I typically respond within 24 hours</p>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/milu-achu-mathew-6bb9b4363/" target="_blank" class="social-card">
+                            <h4>💼 LinkedIn</h4>
+                            <p>linkedin.com/in/milu-achu-mathew</p>
+                            <p style="font-size: 0.8rem; margin-top: 0.5rem;">Connect for professional opportunities</p>
+                        </a>
+
+                        <a href="https://github.com/milumathew-21" target="_blank" class="social-card">
+                            <h4>🐙 GitHub</h4>
+                            <p>github.com/milumathew-21</p>
+                            <p style="font-size: 0.8rem; margin-top: 0.5rem;">Explore my code and projects</p>
+                        </a>
+
+                        <a href="https://twitter.com/miluachu_dev" target="_blank" class="social-card">
+                            <h4>𝕏 Twitter</h4>
+                            <p>@miluachu_dev</p>
+                            <p style="font-size: 0.8rem; margin-top: 0.5rem;">Follow for tech insights and updates</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function navigateTo(pageName) {
+            const pages = document.querySelectorAll('.page');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            pages.forEach(page => page.classList.remove('active'));
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            document.getElementById(pageName).classList.add('active');
+            document.querySelector(`[data-page="${pageName}"]`).classList.add('active');
+
+            window.scrollTo(0, 0);
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageName = link.getAttribute('data-page');
+                navigateTo(pageName);
+            });
+        });
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Thank you, ${name}! Your message has been sent successfully. I'll get back to you soon!`);
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
